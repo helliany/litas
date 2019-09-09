@@ -1,0 +1,32 @@
+.tab-content__text
+    margin-bottom: 25px
+
+.tab-content
+    h2, h3, h4, h5
+        margin-bottom: 1em
+
+    .table
+        margin-top: 14px
+
+    div:not([class])
+        margin-bottom: 1em
+
+    p:not([class]) 
+        margin-bottom: 1em
+
+.tabs
+    margin-bottom: 40px
+    display: flex
+
+.tabs__item
+    width: 50%
+    text-align: center
+    cursor: pointer
+    font-weight: 700
+    text-transform: uppercase
+    padding: 10px
+    border-bottom: 2px solid #e7e7e7
+    transition: border-color .1s ease
+
+    &.active, &:hover, &:focus
+        border-color: $accent

@@ -1,0 +1,275 @@
+doctype html
+html(lang='ru')
+  head
+    title Литас
+    include ../modules/head
+
+  body
+
+    // begin wrapper
+    .wrapper
+
+      .wrapper__top.inner-wrapper__top
+
+        include ../modules/header
+
+        include ../modules/menu-inner
+
+        // begin sidebar-menu 
+        .sidebar-menu
+          .sidebar__top
+            .sidebar-menu__container.services__sidebar-menu
+              .sidebar-menu__button.hidden-button
+                  // begin toggle-menu 
+                  button.toggle-menu.sidebar-menu__toggle
+                      span.tgl.tgl-topper
+                      span.tgl.tgl-footer
+                      span.tgl.tgl-bottom
+                  // end toggle-menu 
+                  span.sidebar-menu__text Продукция
+              .sidebar-menu__button.services__sidebar-button
+                  // begin toggle-menu 
+                  button.toggle-menu.sidebar-menu__toggle.services__sidebar-toggle
+                      span.tgl.tgl-topper
+                      span.tgl.tgl-footer
+                      span.tgl.tgl-bottom
+                  // end toggle-menu 
+                  span.sidebar-menu__text Услуги
+          
+          .hidden-sidebar.hidden-production
+            ul.hidden-sidebar__list
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Плакаты
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Листовки, бланки
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Буклеты
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Брошюры
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Блокноты
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="category.html") Календари
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Упаковка
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Упаковка для дисков
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Хедеры
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Шелфтокеры
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Воблеры
+              li.hidden-sidebar__item
+                a.hidden-sidebar__link(href="#") Печать на конвертах
+
+          .hidden-sidebar.services-hidden
+            ul.hidden-sidebar__list
+              li.sidebar__item
+                a.sidebar__link(href="#") Офсетная печать
+              li.sidebar__item
+                a.sidebar__link(href="card-service.html") Брошюровка
+              li.sidebar__item
+                a.sidebar__link(href="#") Фальцовка, биговка
+              li.sidebar__item
+                a.sidebar__link(href="#") Вырубка
+              li.sidebar__item
+                a.sidebar__link(href="#") Ламинация
+              li.sidebar__item
+                a.sidebar__link(href="#") Кашировка
+              li.sidebar__item
+                a.sidebar__link(href="#") Склейка
+              li.sidebar__item
+                a.sidebar__link(href="#") Термоусадка
+              li.sidebar__item
+                a.sidebar__link(href="#") Сверление отверстий
+        
+      // end sidebar-menu  
+
+      include ../modules/request
+
+      .wrapper__bottom
+
+        // Для затемнения контента при выведении меню на экран
+        .hide 
+
+        .page-inner.textual-inner
+          .wrapper__container
+
+            // begin sidebar 
+            aside.sidebar
+              .sidebar__wrapper
+                h3.sidebar__title Услуги типографии
+                ul.sidebar__list
+                    li.sidebar__item
+                        a.sidebar__link(href="#") Офсетная печать
+                    li.sidebar__item
+                        a.sidebar__link(href="card-service.html") Брошюровка
+                    li.sidebar__item
+                        a.sidebar__link(href="#") Фальцовка, биговка
+                    li.sidebar__item
+                        a.sidebar__link(href="#") Вырубка
+                    li.sidebar__item
+                        a.sidebar__link(href="#") Ламинация
+                    li.sidebar__item
+                        a.sidebar__link(href="#") Кашировка
+                    li.sidebar__item
+                        a.sidebar__link(href="#") Склейка
+                    li.sidebar__item
+                        a.sidebar__link(href="#") Термоусадка
+                    li.sidebar__item
+                        a.sidebar__link(href="#") Сверление отверстий
+
+              .sidebar__wrapper
+                h3.sidebar__title Стоимость продукции
+                ul.sidebar__list
+                    li.sidebar__item
+                        a.sidebar__link(href="#") Плакаты
+                    li.sidebar__item
+                        a.sidebar__link(href="#") Листовки, бланки
+                    li.sidebar__item
+                        a.sidebar__link(href="#") Буклеты
+                    li.sidebar__item
+                        a.sidebar__link(href="#") Брошюры
+                    li.sidebar__item
+                        a.sidebar__link(href="#") Блокноты
+                    li.sidebar__item
+                        a.sidebar__link(href="category.html") Календари
+                    li.sidebar__item
+                        a.sidebar__link(href="#") Упаковка
+                    li.sidebar__item
+                        a.sidebar__link(href="#") Упаковка для дисков
+                    li.sidebar__item
+                        a.sidebar__link(href="#") Хедеры
+                    li.sidebar__item
+                        a.sidebar__link(href="#") Шелфтокеры
+                    li.sidebar__item
+                        a.sidebar__link(href="#") Воблеры
+                    li.sidebar__item
+                        a.sidebar__link(href="#") Печать на конвертах
+            // end sidebar 
+
+            // begin main-content
+            main.inner-content
+
+                // begin breadcrumbs 
+                ul.breadcrumbs
+                    li.breadcrumbs__item
+                        a.breadcrumbs__link(href="index.html") Главная
+                    li.breadcrumbs__item
+                        a.breadcrumbs__link(href="services-page.html") Услуги типографии
+                    li.breadcrumbs__item
+                        a.breadcrumbs__link(href="textual-page.html") Крошка
+                // end breadcrumbds 
+    
+                header.heading.page-inner__heading
+                    .heading__line
+                    h1.h2 ЗАГОЛОВОК H1
+                    .heading__line
+
+                .finding__heading
+                    h2.finding__title.textual__subtitle ЗАГОЛОВОК H2
+
+                // begin textual 
+                section.textual
+
+                h3.textual__h3 Заголовок H3
+
+                .textual__item
+                    p.
+                        Брошюровка на металлическую пружину имеет более элегантный вид по сравнению с брошюровкой на 
+                        пластиковую пружину. В основном он применяется для брошюровки продукции презентационного характера. 
+                        В стоимость брошюровки на металлическую пружину включены обложки: плотная прозрачная плёнка для верхней 
+                        обложки и плотный картон для нижней. 
+
+                h4.textual__h4 Заголовок H4
+
+                .textual__item
+                    p.
+                        Брошюровка на металлическую пружину имеет более элегантный вид по сравнению с брошюровкой на 
+                        пластиковую пружину. В основном он применяется для брошюровки продукции презентационного характера. 
+                        В стоимость брошюровки на металлическую пружину включены обложки: плотная прозрачная плёнка для верхней 
+                        обложки и плотный картон для нижней. 
+                
+                ul.textual__links
+                    li.textual__links-item
+                        a(href="#").textual__link.textual__link--bold Гиперссылка 1
+                    li.textual__links-item
+                        a(href="#").textual__link Гиперссылка
+                    li.textual__links-item
+                        a(href="#").textual__link Гиперссылка ховер
+
+                ul.textual__links
+                    li.textual__links-item
+                        a(href="#").textual__link.textual__link--bold Гиперссылка 2
+                    li.textual__links-item
+                        a(href="#").textual__link.textual__link--underline Гиперссылка
+                    li.textual__links-item
+                        a(href="#").textual__link.textual__link--underline Гиперссылка ховер
+
+                ul.textual__links
+                    li.textual__links-item
+                        a(href="#").textual__link.textual__link--bold Гиперссылка 3
+                    li.textual__links-item
+                        a(href="#").textual__link.textual__link--bold Гиперссылка
+                    li.textual__links-item
+                        a(href="#").textual__link.textual__link--bold Гиперссылка ховер
+
+                h3.textual__list-heading Маркированный список
+                ul.textual__list
+                    li.textual__list-item Квартальные
+                    li.textual__list-item Настенные
+                    li.textual__list-item Карманные
+                    li.textual__list-item Настольные
+
+                h3.textual__table-h3 Таблица
+                // begin table 
+                .table
+                    .table__row.table__row--bold
+                        .table__td.table__td-head Тираж
+                        .table__td 100
+                        .table__td 200
+                        .table__td 300
+                        .table__td 400
+                        .table__td 500
+                        .table__td 1000
+                    .table__row
+                        .table__td.table__td-head Цена у.е. за 1 шт.
+                        .table__td 4,9
+                        .table__td 3,75
+                        .table__td 3,4
+                        .table__td 3,09
+                        .table__td 2,86
+                        .table__td 2,3
+                    .table__row
+                        .table__td.table__td-head Цена у.е. за тираж
+                        .table__td 490
+                        .table__td 750
+                        .table__td 1020
+                        .table__td 1235
+                        .table__td 1430
+                        .table__td 2300
+                // end table 
+
+                // begin set-images 
+                .set-images
+                    .set-images__left
+                        .set-images__item.set-images__item--big(style="background-image: url(img/card-service/big.jpg);")
+                    .set-images__right
+                        .set-images__item(style="background-image: url(img/card-service/small-1.jpg);")
+                        .set-images__item(style="background-image: url(img/card-service/small-2.jpg);")
+                // end set-images 
+
+                // end textual 
+               
+    
+            // end main-content 
+
+    // end wrapper
+
+    include ../modules/footer
+
+
+    // scripts 
+    script(src='js/scripts.min.js')
+    script(src='https://api-maps.yandex.ru/2.1/?lang=ru_RU', type='text/javascript')

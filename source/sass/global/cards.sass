@@ -1,0 +1,47 @@
+.cards
+    display: flex
+    flex-wrap: wrap
+    align-items: stretch
+
+.card
+    background-color: $light
+    text-align: center
+    margin-bottom: 20px
+    display: flex
+    flex-direction: column
+    padding: 55px 19px 20px
+    cursor: pointer
+
+.card__img
+    height: 80px
+    margin-bottom: 40px
+
+    img
+        margin: auto auto 0
+        padding: 0
+
+.card__title
+    color: $color-main
+    text-transform: uppercase
+    margin-bottom: 20px
+
+.card__text
+    margin-top: auto
+    display: block
+    margin-bottom: -7px
+
+.card__text-line
+    display: block
+    font-size: 14px
+    margin-bottom: 7px
+    text-align: left
+    color: $color-main
+
+.card__link
+    color: $accent
+
+    &:hover
+        font-weight: 600
+
+.card__numbers 
+    color: $accent
